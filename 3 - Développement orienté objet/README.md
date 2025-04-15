@@ -1,4 +1,4 @@
-# Développement orienté objet
+# Développement orienté objet (Kotlin)
 
 ## Semestre 2 et à venir
 Dans cette partie vous allez voir mes **projets WEB** réalisés en cours, comme un site web au début de l'année scolaire où l'on devait créer un site marchand (sans javascript).\
