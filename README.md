@@ -9,10 +9,12 @@ Tout d'abord laissez moi m'introduire, Je suis **Mattys Lachaise**, j'ai 19 ans 
 5. [Projets perso](#projets-perso)
 6. [Contact](#contact)
 ## Développement Web
-Dans cette partie vous allez voir mes **projets WEB** réalisés en cours, comme un site web au début de l'année scolaire où l'on devait créer un site marchand (sans javascript)  Au début du deuxième semestre nous avons dû, en cours de communication, créer un site web "esthétique" sur le thème de notre choix.
+Dans cette partie vous allez voir mes **projets WEB** réalisés en cours, comme un site web au début de l'année scolaire où l'on devait créer un site marchand (sans javascript)\
+Au début du deuxième semestre nous avons dû, en cours de communication, créer un site web "esthétique" sur le thème de notre choix.
 
 ## Bases de Données
-Nous avons appris à coder en SQL pour la prmière fois, donc au semestre 1 c'était surtout l'introduction à la base de donnée (SELECT, CREATE, DROP, WHERE, EXISTS, IN, etc...)  
+Nous avons appris à coder en SQL pour la prmière fois, donc au semestre 1 c'était surtout l'introduction à la base de donnée (SELECT, CREATE, DROP, WHERE, EXISTS, IN, etc...)\
+Deuxième semestre
 
 ## Développement orienté objet
 
