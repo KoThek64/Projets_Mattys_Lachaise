@@ -30,3 +30,4 @@ Et aussi peut être un début de projet avec ma mère mais rien de concret juste
 ## Contact
 - Adresse mail : mattys.contact@gmail.com
 - Numéro de téléphone : 06 68 54 03 07
+- Lien Linkedin : https://www.linkedin.com/in/mattys-lachaise-b16617360?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app
