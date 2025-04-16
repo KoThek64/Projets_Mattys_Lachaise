@@ -1,8 +1,9 @@
 # Développement WEB (HTML/CSS)
 
-## Semestre 1
-Dans cette partie vous allez voir mes **projets WEB** réalisés en cours, comme un site web au début de l'année scolaire où l'on devait créer un site marchand (sans javascript).\
-Au début du deuxième semestre nous avons dû, en cours de communication, créer un site web "esthétique" sur le thème de notre choix.
+## Présentation du site
+### Page d'acceuil
+Pour la page d'acceuil nous avons fais en sorte d'afficher les souris qui sont à *"vendre"* :
+![](images\Capture d'écran 2025-04-16 170853.png)
 
 ## Semestre 2
 Nous avons appris à coder en SQL pour la première fois, donc au semestre 1 c'était surtout l'introduction à la base de donnée (SELECT, CREATE, DROP, WHERE, EXISTS, IN, etc...)\
