@@ -12,4 +12,4 @@ Pour le site du semestre 2 ce n'était pas vraiment du dev web car nous avions f
 Nous étions donc en groupe de 4, et nous devions nous répartir la tâche, pour ne pas perdre trop de temps nous nous sommes aidé chacun de nos anciens site du semestre 1, ce qui nous à été très utile, nous avons même du ***javascript*** dans notre site (Je n'ai pas touché à cette partie je ne pourrais pas expliquer mais c'est en rapport avec la recherche).\
 \
 Notre site est un site tel que l'Equipe, c'est un site qui regroupe des informations sur le sport.
-> Pour ma part j'ai surtout servis à chercher les informations et la mise en page (principalement le footer et le header ainsi que la page panier).
+> Pour ma part j'ai eu pour mission de chercher les informations et la mise en page (principalement le footer et le header ainsi que la page panier).
