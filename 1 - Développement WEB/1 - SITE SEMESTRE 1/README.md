@@ -2,8 +2,16 @@
 
 ## Présentation du site
 ### Page d'acceuil
-Pour la page d'acceuil nous avons fais en sorte d'afficher les souris qui sont à *"vendre"* :
-![](https://github.com/KoThek64/Projets_Mattys_Lachaise/blob/main/1%20-%20D%C3%A9veloppement%20WEB/1%20-%20SITE%20SEMESTRE%201/images/Capture%20d'%C3%A9cran%202025-04-16%20170853.png)
+#### Pour la page d'acceuil nous avons fais en sorte d'afficher les souris qui sont à *"vendre"* :
+![](https://github.com/KoThek64/Projets_Mattys_Lachaise/blob/main/1%20-%20D%C3%A9veloppement%20WEB/1%20-%20SITE%20SEMESTRE%201/images/Capture_Page_d'acceuil.png)
+\
+#### Pour ce qui est de la page de connexion/inscription nous avons ceci :
+![](https://github.com/KoThek64/Projets_Mattys_Lachaise/blob/main/1%20-%20D%C3%A9veloppement%20WEB/1%20-%20SITE%20SEMESTRE%201/images/Capture_Panier.png)
+\
+#### Et pour finir nous avons le panier :
+![](https://github.com/KoThek64/Projets_Mattys_Lachaise/blob/main/1%20-%20D%C3%A9veloppement%20WEB/1%20-%20SITE%20SEMESTRE%201/images/Capture_Inscription.png)
+\
+Nous avons fais aussi d'autre page annexes comme le "qui sommes nous" ou "quels sont nos motivations" dans le *footer*, quasiment tout est cliquable je vous laisse essayer.
 
 ## Semestre 2
 Nous avons appris à coder en SQL pour la première fois, donc au semestre 1 c'était surtout l'introduction à la base de donnée (SELECT, CREATE, DROP, WHERE, EXISTS, IN, etc...)\
