@@ -2,7 +2,8 @@
 
 ## Semestre 1
 Pour le semestre 1 nous avons donc dû créer un faux site web marchand en **HTML/CSS**, en groupe de 2, et nous avons eu la magnifique idée de faire un site qui vend des souris, nous avons donc fais une page d'acceuil, une page de connexion/inscription et une page de panier.\
-le seul problème que rencontre notre site est qu'il n'est pas très responsive donc nous n'avons pas eu tout les points (on a eu 15/20 si je ne me trompe pas).\
+\
+le seul problème que rencontre notre site est qu'il n'est pas très responsive donc nous n'avons pas eu tout les points (on a eu 15/20 si je ne me trompe pas).
 > Nous n'avons pas de javascript car nous n'avons pas encore appris, ça viendra sûrement l'année prochaine lors de notre BUT2.\ 
 
 ## Semestre 2
