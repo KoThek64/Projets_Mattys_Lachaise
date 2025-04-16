@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/full-page.css">
+    <link rel="stylesheet" href="/css/index.css">
+    <script src="/js/search.js"></script>
+    <title>Billet Zen search</title>
+</head>
+
+<body>
+    <header>
+        <div class="top-bar">
+            <a href="/">
+                <img src="/assets/logoP.png" alt="logo" class="logo">
+            </a>
+
+            <div class="hamberger">
+                <button>
+                    <svg id="svg-down" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                        <path fill="none" stroke="var(--color-accent)" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="1.5" d="m19 9l-7 6l-7-6" />
+                    </svg>
+                    <svg id="svg-up" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
+                        onclick="document.activeElement.blur()">
+                        <path fill="none" stroke="var(--color-accent)" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="1.5" d="m19 15l-7-6l-7 6" />
+                    </svg>
+                </button>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="/">home</a></li>
+                        <li><a href="/cart.html">mon panier</a></li>
+                        <li><a href="/search.html">rechercher</a></li>
+                        <li>
+                            <a href="login.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                                    <circle cx="12" cy="6" r="4" fill="var(--color-accent)" />
+                                    <path fill="var(--color-accent)"
+                                        d="M20 17.5c0 2.485 0 4.5-8 4.5s-8-2.015-8-4.5S7.582 13 12 13s8 2.015 8 4.5" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="search-bar">
+                <form name="search">
+                    <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                            <g fill="none" stroke="var(--color-accent)" stroke-width="1.5">
+                                <circle cx="11.5" cy="11.5" r="9.5" />
+                                <path stroke-linecap="round" d="m20 20l2 2" />
+                            </g>
+                        </svg>
+                    </button>
+                    <input type="text" name="text-search" placeholder="Rechercher ...">
+                </form>
+            </div>
+
+            <div class="content">
+                <ul class="center-part">
+                    <li><a href="/">home</a></li>
+                    <li><a href="/cart.html">mon panier</a></li>
+                </ul>
+                <a href="login.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                        <circle cx="12" cy="6" r="4" fill="var(--color-accent)" />
+                        <path fill="var(--color-accent)"
+                            d="M20 17.5c0 2.485 0 4.5-8 4.5s-8-2.015-8-4.5S7.582 13 12 13s8 2.015 8 4.5" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+        <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 300" preserveAspectRatio="none">
+            <path fill="currentColor" fill-opacity="1"
+                d="M0,256L48,234.7C96,213,192,171,288,165.3C384,160,480,192,576,208C672,224,768,224,864,192C960,160,1056,96,1152,85.3C1248,75,1344,117,1392,138.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+            </path>
+        </svg>
+        <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 300" preserveAspectRatio="none">
+            <path fill="currentColor" fill-opacity="1"
+                d="M0,256L48,234.7C96,213,192,171,288,165.3C384,160,480,192,576,208C672,224,768,224,864,192C960,160,1056,96,1152,85.3C1248,75,1344,117,1392,138.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+            </path>
+        </svg>
+        <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 300" preserveAspectRatio="none">
+            <path fill="currentColor" fill-opacity="1"
+                d="M0,256L48,234.7C96,213,192,171,288,165.3C384,160,480,192,576,208C672,224,768,224,864,192C960,160,1056,96,1152,85.3C1248,75,1344,117,1392,138.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+            </path>
+        </svg>
+
+    </header>
+
+    <div class="page">
+        <h4 id="error-message"></h4>
+    </div>
+
+    <footer>
+        <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 300" preserveAspectRatio="none">
+            <path fill="currentColor" fill-opacity="1"
+                d="M0,256L48,234.7C96,213,192,171,288,165.3C384,160,480,192,576,208C672,224,768,224,864,192C960,160,1056,96,1152,85.3C1248,75,1344,117,1392,138.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+            </path>
+        </svg>
+        <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 300" preserveAspectRatio="none">
+            <path fill="currentColor" fill-opacity="1"
+                d="M0,256L48,234.7C96,213,192,171,288,165.3C384,160,480,192,576,208C672,224,768,224,864,192C960,160,1056,96,1152,85.3C1248,75,1344,117,1392,138.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+            </path>
+        </svg>
+        <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 300" preserveAspectRatio="none">
+            <path fill="currentColor" fill-opacity="1"
+                d="M0,256L48,234.7C96,213,192,171,288,165.3C384,160,480,192,576,208C672,224,768,224,864,192C960,160,1056,96,1152,85.3C1248,75,1344,117,1392,138.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+            </path>
+        </svg>
+
+        <div class="content">
+            <div class="sections">
+                <div class="section">
+                    <strong>Liens</strong>
+                    <a href="/">Acceuil</a>
+                    <a href="/sign.html">Se connecter</a>
+                    <a href="/cart.html">Le panier</a>
+                </div>
+
+                <div class="section">
+                    <strong>Nous contacter</strong>
+                    <p>02 33 67 67 11</p>
+                    <p>direction@sporesults.com</p>
+                    <a href="sign.html">Mon compte</a>
+                </div>
+            </div>
+            <small class="copyright">© Copyright : all rights reserved</small>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/full-page.css">
+    <link rel="stylesheet" href="/css/small-card.css">
+    <link rel="stylesheet" href="/css/basic-card.css">
+    <link rel="stylesheet" href="/css/index.css">
+    <script src="/js/index.js"></script>
+    <title>SpoResults</title>
+</head>
+
+<body>
+    <header>
+        <div class="top-bar">
+            <a href="/">
+                <img src="/assets/logoP.png" alt="logo" class="logo">
+            </a>
+
+            <div class="hamberger">
+                <button>
+                    <svg id="svg-down" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                        <path fill="none" stroke="var(--color-accent)" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="1.5" d="m19 9l-7 6l-7-6" />
+                    </svg>
+                    <svg id="svg-up" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
+                        onclick="document.activeElement.blur()">
+                        <path fill="none" stroke="var(--color-accent)" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="1.5" d="m19 15l-7-6l-7 6" />
+                    </svg>
+                </button>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="/">home</a></li>
+                        <li><a href="/cart.html">mon panier</a></li>
+                        <li><a href="/search.html">rechercher</a></li>
+                        <li>
+                            <a href="login.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                                    <circle cx="12" cy="6" r="4" fill="var(--color-accent)" />
+                                    <path fill="var(--color-accent)"
+                                        d="M20 17.5c0 2.485 0 4.5-8 4.5s-8-2.015-8-4.5S7.582 13 12 13s8 2.015 8 4.5" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="search-bar">
+                <form name="search">
+                    <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                            <g fill="none" stroke="var(--color-accent)" stroke-width="1.5">
+                                <circle cx="11.5" cy="11.5" r="9.5" />
+                                <path stroke-linecap="round" d="m20 20l2 2" />
+                            </g>
+                        </svg>
+                    </button>
+                    <input type="text" name="text-search" placeholder="Rechercher ...">
+                </form>
+            </div>
+
+            <div class="content">
+                <ul class="center-part">
+                    <li><a href="/">home</a></li>
+                    <li><a href="/cart.html">mon panier</a></li>
+                </ul>
+                <a href="login.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                        <circle cx="12" cy="6" r="4" fill="var(--color-accent)" />
+                        <path fill="var(--color-accent)"
+                            d="M20 17.5c0 2.485 0 4.5-8 4.5s-8-2.015-8-4.5S7.582 13 12 13s8 2.015 8 4.5" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+        <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 300" preserveAspectRatio="none">
+            <path fill="currentColor" fill-opacity="1"
+                d="M0,256L48,234.7C96,213,192,171,288,165.3C384,160,480,192,576,208C672,224,768,224,864,192C960,160,1056,96,1152,85.3C1248,75,1344,117,1392,138.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+            </path>
+        </svg>
+        <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 300" preserveAspectRatio="none">
+            <path fill="currentColor" fill-opacity="1"
+                d="M0,256L48,234.7C96,213,192,171,288,165.3C384,160,480,192,576,208C672,224,768,224,864,192C960,160,1056,96,1152,85.3C1248,75,1344,117,1392,138.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+            </path>
+        </svg>
+        <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 300" preserveAspectRatio="none">
+            <path fill="currentColor" fill-opacity="1"
+                d="M0,256L48,234.7C96,213,192,171,288,165.3C384,160,480,192,576,208C672,224,768,224,864,192C960,160,1056,96,1152,85.3C1248,75,1344,117,1392,138.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+            </path>
+        </svg>
+
+    </header>
+
+    <div class="page">
+
+        <div class="section-separator">
+            <h3>L'actualité à la une !</h3>
+            <small>À ne pas manquer !</small>
+        </div>
+
+        <a href="/cart.html" class="card">
+            <div class="img-wrapper">
+                <img src="./assets/armand.jpeg" alt="image of three people in front of a theatre curtain">
+            </div>
+            <div class="content">
+                <h3>Armand Duplantis bat pour la 11e fois son propre record du monde d'affilé</h3>
+                <small>de <strong><span>RTS</span></strong>, le <strong>
+                        <span>
+                            <date>1 mar. 2025</date>
+                        </span>
+                    </strong></small> <br><br>
+                <strong>Armand Duplantis, double champion olympique du saut à la perche, a une nouvelle fois amélioré
+                    son record du monde d'un centimètre, le portant à 6m27 lors du All Star Perche à Clermont-Ferrand.
+                    Chez les dames, la victoire est revenue à la Zurichoise Angelica Moser avec un bond à 4m76.
+                    Le précédent record de Duplantis datait d'il y a 6 mois, en Ligue de diamant à Chorzow en Pologne
+                    (6m26), quelques semaines après son or olympique à Paris. A Clermont-Ferrand, le phénomène suédois a
+                    franchi 6m27 à sa 1re tentative.
+
+                    La Fédération internationale d'athlétisme a modifié son règlement en 2000 permettant d'homologuer
+                    les sauts réalisés en salle comme des records du monde. Le saut le plus haut avait alors été réalisé
+                    par Bubka avec 6m15 en 1993 à Donetsk.</strong>
+            </div>
+        </a>
+
+        <div class="section-separator">
+            <h3>Les autres résultats récents ⚡</h3>
+            <small>Les plus consultés</small>
+            <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                <path fill="none" stroke="var(--color-accent)" stroke-linecap="round" stroke-linejoin="round"
+                    stroke-width="1.5" d="m19 9l-7 6l-7-6" />
+            </svg>
+        </div>
+
+        <div class="basic-card-wrapper">
+            <a href="cart.html" class="basic-card">
+                <img src="/assets/antoine.jpg" alt="Athena Blues Festival's logo">
+                <div class="content">
+                    <h4>Antoine Griezmann sous le feu des critiques !</h4>
+                    <small><span>
+                            <date>2 Avr 2025</date>
+                        </span></small>
+
+                    <div class="tags">
+                        <small class="tag">Football</small><small class="tag">Drama</small><small class="tag">Coupe
+                            d'Espagne</small>
+                    </div>
+
+                    <p class="description">
+                        L'Atlético de Madrid traverse une mauvaise période depuis quelques semaines. D'abord sortis de
+                        la Ligue des champions par le Real Madrid en huitièmes de finale, les Rojiblancos ont essuyé
+                        mercredi une nouvelle élimination, en demi-finales de Coupe du Roi face au Barça (défaite 0-1 à
+                        domicile, 4-4 à l'aller). Avec un retard de 9 points sur le leader en Championnat, le club
+                        madrilène pourrait encore une fois connaître une saison blanche. Annoncé sur le départ,
+                        notamment en MLS, Antoine Griezmann qui est fortement critiqué, n'a pas répondu aux attentes
+                        mercredi soir. Le Français pourrait donc quitter la capitale sans avoir soulevé un ultime
+                        trophée avec son club (il a remporté la Ligue Europa en 2018).
+                    </p>
+                </div>
+            </a>
+            <a href="cart.html" class="basic-card">
+                <img src="/assets/davis.jpg" alt="image of the bande : vaccines">
+                <div class="content">
+                    <h4>Anthony Davis absolument décisif</h4>
+                    <small><span>
+                            <date>3 Avr 2025</date>
+                        </span></small>
+
+                    <div class="tags">
+                        <small class="tag">Basketball</small><small class="tag">NBA</small><small
+                            class="tag">MVP</small>
+                    </div>
+
+                    <p class="description">
+                        Les Mavericks sont vivants, quoi qu'en pensent ceux, très nombreux, qui n'ont pas digéré le
+                        transfert de Luka Doncic aux Lakers. Le joueur contre qui il a été échangé, Anthony Davis, a
+                        réussi dans la nuit de mercredi à jeudi son meilleur match avec sa nouvelle équipe. Face à
+                        Atlanta, il a cumulé 34 points, 15 rebonds, 5 contres, le panier décisif à trois secondes de la
+                        fin puis la défense en un-contre-un sur Trae Young, poussé au air ball par son envergure et le
+                        peu de temps restant (120-118).
+                    </p>
+                </div>
+            </a>
+
+            <a href="cart.html" class="basic-card">
+                <img src="/assets/hbc.jpg" alt="album cover of the transform">
+                <div class="content">
+                    <h4>Les nantais s'imposent à la dernière minute !</h4>
+                    <small><span>
+                            <date>2 Avr 2025</date>
+                        </span></small>
+
+                    <div class="tags">
+                        <small class="tag">Handball</small><small class="tag">Nantes</small><small class="tag">Champions
+                            League</small>
+                    </div>
+
+                    <p class="description">
+                        C'est la magie de l'Europe, la magie de Nantes. Comment une équipe qui semblait à l'agonie
+                        dimanche, accablée en Championnat par le mal classé Istres (25-24), peut-elle, trois jours plus
+                        tard, réaliser une performance aussi énorme et s'inviter en quarts de finale de la Ligue des
+                        champions ? C'est le H, c'est fou. Mardi, les Nantais ont assommé Plock. Les voilà de retour
+                        dans le Top 8 continental, pour la quatrième fois de leur jeune histoire européenne après 2018,
+                        2019 et 2021.
+                    </p>
+                </div>
+            </a>
+            <a href="cart.html" class="basic-card">
+                <img src="/assets/moto.jpg" alt="image of a prospectus : Festival BAL">
+                <div class="content">
+                    <h4>Le GP de France prolonge son contrat</h4>
+                    <small><span>
+                            <date>2 Avr 2025</date>
+                        </span></small>
+
+                    <div class="tags">
+                        <small class="tag">Moto GP</small><small class="tag">France</small>
+                    </div>
+
+                    <p class="description">
+                        Le promoteur du GP de France a annoncé l'extension du contrat le liant avec le MotoGP jusqu'en
+                        2031. La course continuera de se courir sur le circuit Bugatti du Mans.
+                        L'accord courait jusqu'en 2026 mais ses signataires n'ont pas attendu plus longtemps avant de le
+                        prolonger : le Grand Prix de France a conclu un nouveau contrat avec le MotoGP qui lui garantit
+                        d'apparaître au calendrier du Championnat du monde de vitesse jusqu'en 2031. Claude Michy, le
+                        promoteur de l'épreuve, l'a annoncé mercredi à l'occasion de la conférence de presse de
+                        présentation du Grand Prix 2025, qui se tiendra du 9 au 11 mai au Mans.
+                    </p>
+                </div>
+            </a>
+            <a href="cart.html" class="basic-card">
+                <img src="/assets/arthur fils.jpg" alt="image of a prospectus : Festival BAL">
+                <div class="content">
+                    <h4>Arthur fils vise le top 10</h4>
+                    <small><span>
+                            <date>3 Avr 2025</date>
+                        </span></small>
+
+                    <div class="tags">
+                        <small class="tag">Tennis</small><small class="tag">Classement</small>
+                    </div>
+
+                    <p class="description">
+                        « Je ne vois pas ce qui pourrait l'empêcher d'entrer dans ce top 10 » : Laurent Raymond confiant
+                        pour l'avenir d'Arthur Fils
+
+                        Entraîneur de l'équipe de France, Laurent Raymond, qui a accompagné, entre décembre 2022 et
+                        octobre 2023, l'ascension d'Arthur Fils de la 251e à la 36e place mondiale, l'imagine grimper
+                        bien plus haut encore.
+                    </p>
+                </div>
+            </a>
+            <a href="cart.html" class="basic-card">
+                <img src="/assets/goutgout.jpg" alt="funks">
+                <div class="content">
+                    <h4>Gout Gout brise des records !</h4>
+                    <small><span>
+                            <date>16 Mar 2025</date>
+                        </span></small>
+
+                    <div class="tags">
+                        <small class="tag">Athlétisme</small><small class="tag">Record</small><small
+                            class="tag">Prodige</small>
+                    </div>
+
+                    <p class="description">
+                        Le prodige australien Gout Gout signe la meilleure performance mondiale de l'année sur 200 m
+                        Gout Gout, qui court le 100 m en 10"04 et le 200 m en 20"04, est en avance sur les temps de
+                        passage d'Usain Bolt et a encore fait parler de lui, dimanche.
+
+                        Gout Gout continue d'affoler les chronos. Après s'être fait connaître en décembre grâce au temps
+                        le plus rapide jamais réalisé sur 200 mètres par un athlète de 16 ans (20"04), le prodige
+                        australien du sprint a signé, dimanche 16 mars à Brisbane, la meilleure performance mondiale de
+                        l'année sur la distance, en 20"05, lors des éliminatoires des championnats de l'Etat du
+                        Queensland.
+                    </p>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="section-separator">
+        <h3>Dans les prochains jours ⏳</h3>
+        <small>Notre séléction</small>
+        <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+            <path fill="none" stroke="var(--color-accent)" stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="1.5" d="m19 9l-7 6l-7-6" />
+        </svg>
+    </div>
+    
+    <div class="small-card-container">
+
+        <a href="cart.html" class="small-card">
+            <img src="/assets/tvb.png" alt="movie cover of 'à l'ouest rien de nouveau'">
+            <small class="type">Match</small>
+            <div class="content">
+                <p><strong>Quart de final ToursVB - NiceVB</strong></p>
+                <small><span>
+                    <date>4 Avr. 2025</date>
+                </span></small>
+                <button class="purchase">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                        <g fill="none" stroke="var(--color-accent)" stroke-width="1.5">
+                            <path stroke-linecap="round"
+                                d="m2 3l.265.088c1.32.44 1.98.66 2.357 1.184C5 4.796 5 5.492 5 6.883V9.5c0 2.828 0 4.243.879 5.121c.878.879 2.293.879 5.121.879h8" />
+                            <path
+                                d="M7.5 18a1.5 1.5 0 1 1 0 3a1.5 1.5 0 0 1 0-3Zm9 0a1.5 1.5 0 1 1 0 3a1.5 1.5 0 0 1 0-3ZM5 6h11.45c2.055 0 3.083 0 3.528.674c.444.675.04 1.619-.77 3.508l-.429 1c-.378.882-.567 1.322-.942 1.57c-.376.248-.856.248-1.815.248H5" />
+                        </g>
+                    </svg>
+                </button>
+            </div>
+        </a>
+
+        <a href="cart.html" class="small-card">
+            <img src="/assets/marathons de paris.jpg" alt="image of a circus show">
+            <small class="type">Marathon</small>
+            <div class="content">
+                <p><strong>Marathon de paris</strong></p>
+                <small><span>
+                        <date>12 Avr. 2025</date>
+                    </span></small>
+                <button class="purchase">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                        <g fill="none" stroke="var(--color-accent)" stroke-width="1.5">
+                            <path stroke-linecap="round"
+                                d="m2 3l.265.088c1.32.44 1.98.66 2.357 1.184C5 4.796 5 5.492 5 6.883V9.5c0 2.828 0 4.243.879 5.121c.878.879 2.293.879 5.121.879h8" />
+                            <path
+                                d="M7.5 18a1.5 1.5 0 1 1 0 3a1.5 1.5 0 0 1 0-3Zm9 0a1.5 1.5 0 1 1 0 3a1.5 1.5 0 0 1 0-3ZM5 6h11.45c2.055 0 3.083 0 3.528.674c.444.675.04 1.619-.77 3.508l-.429 1c-.378.882-.567 1.322-.942 1.57c-.376.248-.856.248-1.815.248H5" />
+                        </g>
+                    </svg>
+                </button>
+            </div>
+        </a>
+
+        <a href="cart.html" class="small-card">
+            <img src="/assets/finale de coupe de france football.jpg" alt="image of a festival with colors">
+            <small class="type">Match</small>
+            <div class="content">
+                <p><strong>Finale Coupe de France</strong></p>
+                <small><span>
+                    <date>24 Mai. 2025</date>
+                </span></small>
+                <button class="purchase">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                        <g fill="none" stroke="var(--color-accent)" stroke-width="1.5">
+                            <path stroke-linecap="round"
+                                d="m2 3l.265.088c1.32.44 1.98.66 2.357 1.184C5 4.796 5 5.492 5 6.883V9.5c0 2.828 0 4.243.879 5.121c.878.879 2.293.879 5.121.879h8" />
+                            <path
+                                d="M7.5 18a1.5 1.5 0 1 1 0 3a1.5 1.5 0 0 1 0-3Zm9 0a1.5 1.5 0 1 1 0 3a1.5 1.5 0 0 1 0-3ZM5 6h11.45c2.055 0 3.083 0 3.528.674c.444.675.04 1.619-.77 3.508l-.429 1c-.378.882-.567 1.322-.942 1.57c-.376.248-.856.248-1.815.248H5" />
+                        </g>
+                    </svg>
+                </button>
+            </div>
+        </a>
+
+        <a href="cart.html" class="small-card">
+            <img src="/assets/gp monaco.jpg" alt="cover of selug 'Éternel retour' album">
+            <small class="type">Grand Prix</small>
+            <div class="content">
+                <p><strong>Grand Prix de Monaco</strong></p>
+                <small><span>
+                    <date>25 Mai. 2025</date>
+                </span></small>
+                <button class="purchase">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                        <g fill="none" stroke="var(--color-accent)" stroke-width="1.5">
+                            <path stroke-linecap="round"
+                                d="m2 3l.265.088c1.32.44 1.98.66 2.357 1.184C5 4.796 5 5.492 5 6.883V9.5c0 2.828 0 4.243.879 5.121c.878.879 2.293.879 5.121.879h8" />
+                            <path
+                                d="M7.5 18a1.5 1.5 0 1 1 0 3a1.5 1.5 0 0 1 0-3Zm9 0a1.5 1.5 0 1 1 0 3a1.5 1.5 0 0 1 0-3ZM5 6h11.45c2.055 0 3.083 0 3.528.674c.444.675.04 1.619-.77 3.508l-.429 1c-.378.882-.567 1.322-.942 1.57c-.376.248-.856.248-1.815.248H5" />
+                        </g>
+                    </svg>
+                </button>
+            </div>
+        </a>
+        <a href="cart.html" class="small-card">
+            <img src="/assets/roland-garros-2020.jpg.webp" alt="movie cover of 'à l'ouest rien de nouveau'">
+            <small class="type">Tournoi</small>
+            <div class="content">
+                <p><strong>Roland Garros</strong></p>
+                <small><span>
+                    <date>25 Mai. 2025</date>
+                </span></small>
+                <button class="purchase">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                        <g fill="none" stroke="var(--color-accent)" stroke-width="1.5">
+                            <path stroke-linecap="round"
+                                d="m2 3l.265.088c1.32.44 1.98.66 2.357 1.184C5 4.796 5 5.492 5 6.883V9.5c0 2.828 0 4.243.879 5.121c.878.879 2.293.879 5.121.879h8" />
+                            <path
+                                d="M7.5 18a1.5 1.5 0 1 1 0 3a1.5 1.5 0 0 1 0-3Zm9 0a1.5 1.5 0 1 1 0 3a1.5 1.5 0 0 1 0-3ZM5 6h11.45c2.055 0 3.083 0 3.528.674c.444.675.04 1.619-.77 3.508l-.429 1c-.378.882-.567 1.322-.942 1.57c-.376.248-.856.248-1.815.248H5" />
+                        </g>
+                    </svg>
+                </button>
+            </div>
+        </a>
+
+        
+    </div>
+
+    <div class="small-card-container">
+
+        <a href="cart.html" class="small-card">
+            <img src="/assets/v24h du mans.jpg" alt="image of an exposition">
+            <small class="type">Compétition</small>
+            <div class="content">
+                <p><strong>24h du Mans</strong></p>
+                <small><span>
+                    <date>11 Juin. 2025</date>
+                </span></small>
+                <button class="purchase">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                        <g fill="none" stroke="var(--color-accent)" stroke-width="1.5">
+                            <path stroke-linecap="round"
+                                d="m2 3l.265.088c1.32.44 1.98.66 2.357 1.184C5 4.796 5 5.492 5 6.883V9.5c0 2.828 0 4.243.879 5.121c.878.879 2.293.879 5.121.879h8" />
+                            <path
+                                d="M7.5 18a1.5 1.5 0 1 1 0 3a1.5 1.5 0 0 1 0-3Zm9 0a1.5 1.5 0 1 1 0 3a1.5 1.5 0 0 1 0-3ZM5 6h11.45c2.055 0 3.083 0 3.528.674c.444.675.04 1.619-.77 3.508l-.429 1c-.378.882-.567 1.322-.942 1.57c-.376.248-.856.248-1.815.248H5" />
+                        </g>
+                    </svg>
+                </button>
+            </div>
+        </a>
+
+        <a href="cart.html" class="small-card">
+            <img src="/assets/euro féminin.png" alt="image of a circus show">
+            <small class="type">Tournoi</small>
+            <div class="content">
+                <p><strong>Euro Football Féminin</strong></p>
+                <small><span>
+                    <date>2 Juil. 2025</date>
+                </span></small>
+                <button class="purchase">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                        <g fill="none" stroke="var(--color-accent)" stroke-width="1.5">
+                            <path stroke-linecap="round"
+                                d="m2 3l.265.088c1.32.44 1.98.66 2.357 1.184C5 4.796 5 5.492 5 6.883V9.5c0 2.828 0 4.243.879 5.121c.878.879 2.293.879 5.121.879h8" />
+                            <path
+                                d="M7.5 18a1.5 1.5 0 1 1 0 3a1.5 1.5 0 0 1 0-3Zm9 0a1.5 1.5 0 1 1 0 3a1.5 1.5 0 0 1 0-3ZM5 6h11.45c2.055 0 3.083 0 3.528.674c.444.675.04 1.619-.77 3.508l-.429 1c-.378.882-.567 1.322-.942 1.57c-.376.248-.856.248-1.815.248H5" />
+                        </g>
+                    </svg>
+                </button>
+            </div>
+        </a>
+
+        <a href="cart.html" class="small-card">
+            <img src="/assets/volleyball CDM.jpg" alt="image of a festival with colors">
+            <small class="type">Tournoi</small>
+            <div class="content">
+                <p><strong>Coupe du monde Volleyball</strong></p>
+                <small><span>
+                    <date>12 Sep. 2025</date>
+                </span></small>
+                <button class="purchase">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                        <g fill="none" stroke="var(--color-accent)" stroke-width="1.5">
+                            <path stroke-linecap="round"
+                                d="m2 3l.265.088c1.32.44 1.98.66 2.357 1.184C5 4.796 5 5.492 5 6.883V9.5c0 2.828 0 4.243.879 5.121c.878.879 2.293.879 5.121.879h8" />
+                            <path
+                                d="M7.5 18a1.5 1.5 0 1 1 0 3a1.5 1.5 0 0 1 0-3Zm9 0a1.5 1.5 0 1 1 0 3a1.5 1.5 0 0 1 0-3ZM5 6h11.45c2.055 0 3.083 0 3.528.674c.444.675.04 1.619-.77 3.508l-.429 1c-.378.882-.567 1.322-.942 1.57c-.376.248-.856.248-1.815.248H5" />
+                        </g>
+                    </svg>
+                </button>
+            </div>
+        </a>
+
+        <a href="cart.html" class="small-card">
+            <img src="/assets/Athlé CDM.jpeg" alt="cover of selug 'Éternel retour' album">
+            <small class="type">Tournoi</small>
+            <div class="content">
+                <p><strong>Coupe du monde d'athlétisme</strong></p>
+                <small><span>
+                    <date>13 Sep. 2025</date>
+                </span></small>
+                <button class="purchase">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                        <g fill="none" stroke="var(--color-accent)" stroke-width="1.5">
+                            <path stroke-linecap="round"
+                                d="m2 3l.265.088c1.32.44 1.98.66 2.357 1.184C5 4.796 5 5.492 5 6.883V9.5c0 2.828 0 4.243.879 5.121c.878.879 2.293.879 5.121.879h8" />
+                            <path
+                                d="M7.5 18a1.5 1.5 0 1 1 0 3a1.5 1.5 0 0 1 0-3Zm9 0a1.5 1.5 0 1 1 0 3a1.5 1.5 0 0 1 0-3ZM5 6h11.45c2.055 0 3.083 0 3.528.674c.444.675.04 1.619-.77 3.508l-.429 1c-.378.882-.567 1.322-.942 1.57c-.376.248-.856.248-1.815.248H5" />
+                        </g>
+                    </svg>
+                </button>
+            </div>
+        </a>
+        
+
+        <a href="cart.html" class="small-card">
+            <img src="/assets/CDM Cyclisme.jpg" alt="image of an exposition">
+            <small class="type">Tournoi</small>
+            <div class="content">
+                <p><strong>Coupe du monde de Cyclisme</strong></p>
+                <small><span>
+                    <date>21 Sep. 2025</date>
+                </span></small>
+                <button class="purchase">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                        <g fill="none" stroke="var(--color-accent)" stroke-width="1.5">
+                            <path stroke-linecap="round"
+                                d="m2 3l.265.088c1.32.44 1.98.66 2.357 1.184C5 4.796 5 5.492 5 6.883V9.5c0 2.828 0 4.243.879 5.121c.878.879 2.293.879 5.121.879h8" />
+                            <path
+                                d="M7.5 18a1.5 1.5 0 1 1 0 3a1.5 1.5 0 0 1 0-3Zm9 0a1.5 1.5 0 1 1 0 3a1.5 1.5 0 0 1 0-3ZM5 6h11.45c2.055 0 3.083 0 3.528.674c.444.675.04 1.619-.77 3.508l-.429 1c-.378.882-.567 1.322-.942 1.57c-.376.248-.856.248-1.815.248H5" />
+                        </g>
+                    </svg>
+                </button>
+            </div>
+        </a>
+    </div>
+
+
+    <footer>
+        <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 300" preserveAspectRatio="none">
+            <path fill="currentColor" fill-opacity="1"
+                d="M0,256L48,234.7C96,213,192,171,288,165.3C384,160,480,192,576,208C672,224,768,224,864,192C960,160,1056,96,1152,85.3C1248,75,1344,117,1392,138.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+            </path>
+        </svg>
+        <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 300" preserveAspectRatio="none">
+            <path fill="currentColor" fill-opacity="1"
+                d="M0,256L48,234.7C96,213,192,171,288,165.3C384,160,480,192,576,208C672,224,768,224,864,192C960,160,1056,96,1152,85.3C1248,75,1344,117,1392,138.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+            </path>
+        </svg>
+        <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 300" preserveAspectRatio="none">
+            <path fill="currentColor" fill-opacity="1"
+                d="M0,256L48,234.7C96,213,192,171,288,165.3C384,160,480,192,576,208C672,224,768,224,864,192C960,160,1056,96,1152,85.3C1248,75,1344,117,1392,138.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+            </path>
+        </svg>
+
+        <div class="content">
+            <div class="sections">
+                <div class="section">
+                    <strong>Liens</strong>
+                    <a href="/">Acceuil</a>
+                    <a href="/sign.html">Se connecter</a>
+                    <a href="/cart.html">Le panier</a>
+                </div>
+
+                <div class="section">
+                    <strong>Nous contacter</strong>
+                    <p>02 33 67 67 11</p>
+                    <p>direction@sporesults.com</p>
+                    <a href="sign.html">Mon compte</a>
+                </div>
+            </div>
+            <small class="copyright">© Copyright : all rights reserved</small>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,113 @@
+.small-card-container {
+    display: flex;
+    gap: 24px;
+    overflow-x: scroll;
+    overflow-y: visible;
+    padding-bottom: 16px;
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.small-card-container::-webkit-scrollbar {
+    display: none;
+}
+
+
+.small-card {
+    --width: min(256px, calc(100vw / 1.618));
+    width: var(--width);
+    height: calc(var(--width) * 1.618);
+    position: relative;
+    overflow: hidden;
+    border-radius: 16px;
+    flex-shrink: 0;
+    --shadow-color: 202deg 20% 58%;
+    box-shadow: 0.3px 0.5px 0.5px hsl(var(--shadow-color) / 0.7),
+        0.7px 1.3px 1.4px -1.3px hsl(var(--shadow-color) / 0.58),
+        2.1px 4.1px 4.3px -2.5px hsl(var(--shadow-color) / 0.46),
+        5.7px 11.4px 11.9px -3.8px hsl(var(--shadow-color) / 0.34);
+        color: var(--color-accent);
+}
+
+.small-card::before {
+    content: '';
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 70%);
+}
+
+.small-card::after {
+    content: '';
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 70%);
+}
+
+.small-card img {
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+
+    transition: transform 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.small-card:hover img {
+    transform: scale(1.1);
+}
+
+.small-card .type {
+    position: absolute;
+    background: var(--color-background-soft);
+    border-radius: 1000px;
+    top: 16px;
+    left: 16px;
+    z-index: 2;
+    padding: 2px 16px;
+}
+
+.small-card .content {
+    z-index: 3;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: white;
+    padding: 32px;
+}
+
+.small-card .content strong {
+    color: white;
+}
+
+.small-card .content small {
+    margin-bottom: -4px;
+    display: block;
+}
+
+.small-card .content span {
+    color: var(--color-background-soft);
+}
+
+.small-card .content .purchase {
+    background: var(--color-background-soft);
+    border: none;
+    padding: 8px;
+    border-radius: 10000px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 24px;
+    position: relative;
+    cursor: pointer;
+}

@@ -1,0 +1,231 @@
+.page {
+    width: min(calc(100% - 64px), 1200px);
+    margin: auto;
+    min-height: 70vh;
+}
+
+header {
+    background: var(--color-background-soft);
+    margin-bottom: 64px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+header .wave {
+    width: max(1000px, 100%);
+    height: 96px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--color-background);
+}
+
+header .wave:nth-of-type(2) {
+    color: var(--color-background-soft);
+    transform: translate(-50%, 8px);
+}
+
+header .wave:nth-of-type(3) {
+    transform: translate(-50%, 16px);
+}
+
+header .top-bar {
+    padding: 48px 0 96px 0;
+    width: min(calc(100% - 112px), 1800px);
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .top-bar > a > img {
+    width: 96px;
+    height: 96px;
+}
+
+header .search-bar {
+    flex: 1;
+    max-width: 600px;
+    padding: 0 32px;
+}
+
+header form {
+    width: 100%;
+    background-color: var(--color-background) !important;
+    display: flex;
+    border-radius: 10000px;
+    gap: 8px;
+    padding: 0 8px;
+    align-items: center;
+}
+
+header form button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+header form input {
+    background: transparent !important;
+}
+
+header form input:focus {
+    outline: none;
+}
+
+header .content {
+    display: flex;
+    align-items: center;
+    gap: 64px;
+}
+
+header .center-part {
+    padding: 0;
+}
+
+header .content ul {
+    height: fit-content;
+}
+
+header .content li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 8px;
+}
+
+header .content li > a {
+    color: var(--color-accent);
+    text-decoration: none;
+}
+
+header .content svg {
+    width: 48px;
+    height: 48px;
+}
+
+header .hamberger {
+    display: none;
+}
+
+@media (width <= 750px) {
+    header .search-bar, header .content {
+        display: none; 
+    }
+
+    header .top-bar{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    header .hamberger {
+        width: 100%;
+        display: block;
+    }
+
+    header .hamberger button {
+        width: 100%;
+        cursor: pointer;
+        background: none;
+        border: none;
+        padding: 0;
+    }
+
+    header #svg-up {
+        display: none;
+    }
+
+    header .hamberger > nav {
+        display: none;
+    }
+
+    .hamberger a {
+        color: var(--color-accent)
+    }
+
+    header .hamberger:focus-within > nav {
+        display: block;
+    }
+
+    header .hamberger ul {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 24px;
+        padding: 0;
+    }
+
+    header .hamberger li {
+        list-style: none;
+    }
+
+    header .hamberger:focus-within #svg-up {
+        display: block;
+        width: 100%;
+    }
+
+    header .hamberger:focus-within #svg-down {
+        display: none;
+    }
+}
+
+footer {
+    width: 100%;
+    position: relative;
+    padding-top: 96px;
+    background: var(--color-background-soft);
+    overflow: hidden;
+    margin-top: 64px;
+}
+
+footer .content {
+    width: min(calc(100% - 64px), 1200px);
+    margin: auto;
+    padding: 64px 64px 0 64px;
+}
+
+footer .sections {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 32px;
+    gap: 32px;
+}
+
+footer .section {
+    flex: 1;
+    flex-shrink: 0;
+    text-align: center;
+}
+
+footer .section * {
+    display: block;
+    cursor: pointer;
+    color: var(--color-accent);
+    text-decoration: none;
+}
+
+footer .copyright {
+    display: block;
+    text-align: center;
+}
+
+footer .wave {
+    width: max(1000px, 100%);
+    height: 96px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%) rotate(180deg);
+    color: var(--color-background);
+}
+
+footer .wave:nth-of-type(2) {
+    transform: translate(-50%, -8px) rotate(180deg);
+    color: var(--color-background-soft);
+}
+
+footer .wave:nth-of-type(3) {
+    transform: translate(-50%, -16px) rotate(180deg);
+}

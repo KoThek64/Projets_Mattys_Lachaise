@@ -1,0 +1,24 @@
+.page {
+    min-height: unset;
+}
+
+#sign-in-container {
+    width: min(100%, 600px);
+    background-color: var(--color-background-);
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sign-in-container form #subm {
+    margin-top: 16px;
+}
+
+#sign-in-container form input {
+    margin-bottom: 20px;
+}
+
+#sign-in-container form p, #sign-in-container a{
+    font-size: small;
+}
