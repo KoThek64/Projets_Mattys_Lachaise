@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion - Vente de Souris</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="images/logo_souris.png" >
+</head>
+<body>
+
+
+    <header>
+        <h1><a href="index.html">Souris d'Ordinateur</a></h1>
+        <nav>
+            <div class="inscription-box" onclick="window.location.href='login.html'">
+                <img src="images/user.jpg" width="40" height="40" alt="User">
+                <span>Inscription</span>
+            </div>
+            <div class="panier-box" onclick="window.location.href='panier.html'">
+                <img src="images/PANIER.jpg" width="40" height="40" alt="Panier">
+                <span>Mon Panier</span>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+        <div class="container">
+            <form class="formulaire">
+                <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+                <h2>Inscription</h2>
+                <label for="idPrenom"> Prénom : </label> <br>
+                <input type="text" name="prenom" id="idPrenom" placeholder="&#xf007">
+                <br>
+                <label for="idPassword"> Mot de passe : </label><br>
+                <input type="password" name="password" id="idPassword" placeholder="&#xf023"> <br><br>
+                Genre :
+                <label for="idHomme">Homme</label>
+                <input type="radio" name="genre" value="h" id="idHomme" checked>
+                <label for="idFemme">Femme</label>
+                <input type="radio" name="genre" value="f" id="idFemme">
+                <br><br>
+
+                Date de naissance :
+                <input type="date" name="day" min="2000-01-02" max="2010-31-12" >
+                <br>
+                E-mail:
+                <input type="email" name="email" placeholder="&#xf0e0">
+                <br>
+
+                Téléphone:
+                <input type="tel" name="usrtel" placeholder="&#xf095">
+                <br> <br>
+
+                <br>
+                <input type="reset" value="Reset">
+                <input type="submit" value="Submit">
+        
+            </form>
+        </div>
+        <br>
+        <br>
+    </main>
+
+
+    <footer>
+        <div class="titre_footer">
+            <p>&copy; 2024 Vente de Souris</p>
+        </div>
+            <div class="en_bas" style="justify-content: space-between;">
+                <div class="apropos">
+                    <p>A propos de nous :</p>
+                    <ul>    
+                        <li>
+                            <a href="noms.html">Qui sommes nous ?</a>
+                        </li>
+                        <br>
+                        <li>
+                            <a href="inspirations.html">D'où vient notre inspiration</a>
+                        </li>
+                </div>
+                <div class="mention">
+                    <p>Mentions légales :</p>
+                    <ul>    
+                        <li>
+                            <a href="https://www.legifrance.gouv.fr/codes/id/LEGISCTA000038411055">Code du commerces</a>
+                        </li>
+                        <br>
+                        <li>
+                            <a href="https://www.legifrance.gouv.fr/codes/id/LEGISCTA000032227354/">Code de la consommation</a>
+                        </li>
+                </div>
+                <div class="contact">
+                    <p>Contactez-nous :</p>
+                    <ul>    
+                        <li>
+                            <p>Adresse E-Mail : sourisagogo@ok.com</p>
+                        </li>
+                        <li>
+                            <p>Téléphone : 0606060606</a>
+                        </li>
+                </div>
+                <div class="livraison">
+                    <p>livraison et paiement :</p>
+                    <ul>    
+                        <li>
+                            <a href="mode_livraison.html">Mode et frais de livraison</a>
+                        </li>
+                        <li>
+                            <p>Livraison en Europe</p>
+                        </li>
+                </div>
+                <div class="nantes">
+                        <a href="https://www.univ-nantes.fr/"><img src="images/Logo_nantes.jpg" width="300" height="107.75"></a>
+                </div>
+            </div>
+    </footer>
+
+
+</body>
+</html>

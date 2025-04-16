@@ -1,0 +1,285 @@
+/*----------COMMUN-----------*/
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+body, html {
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #000000;
+    color: white;
+    padding: 45px 20px;
+}
+
+header h1 {
+    display: inline;
+}
+
+nav {
+    float: right;
+    display: flex;
+    align-items: center;
+}
+
+nav img {
+    margin-right: 1%;
+}
+
+nav a {
+    color: white;
+    margin-left: 1%;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+
+main h1{
+    text-align: center;
+}
+
+h1 a {    
+    display: inline;
+    color: white;
+    margin-left: 1.5%;
+    text-decoration: none;
+}
+
+footer {
+    padding: 10px;
+    background-color: #000000;
+    color: white;
+}
+
+.titre_footer{
+    text-align: center;
+}
+
+.apropos{
+    margin-left: 55px;
+}
+
+.mention{
+    margin-left: 55px;
+}
+
+.contact{
+    margin-left: 55px;
+}
+
+.livraison{
+    margin-left: 55px;
+}
+
+.nantes{
+    float: right;
+}
+
+.en_bas{
+    display: flex;
+}
+
+.en_bas a{
+    color: white;
+    text-decoration: none;
+}
+
+img{
+    display:inline-block;
+}
+
+.titre{
+    color:#b41515;
+}
+
+
+
+
+
+/*----------INDEX-----------*/
+
+.produits{
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap:20px;
+}
+
+
+.produit {
+    background-color: white;
+    display: inline-block;
+    border: 1px solid #ddd;
+    border-radius:5px;
+    padding: 10px;
+    text-align: center;
+    transition: 0.2s;
+}
+
+.produit:hover{
+    transform: scale(1.05)
+}
+
+.produit img{
+    max-width:100%;
+    height: auto;
+}
+
+.produit button:hover{
+    background-color: #2980b9;
+}
+
+.produit button:active{
+    background-color: #236896;
+}
+
+button{
+    background-color: #3498db;
+    color: white;
+    border:none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+/*----------LOGIN------------*/
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.formulaire {
+    border: 1px solid #ccc;
+    padding: 2%;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+
+}
+
+input[type=submit]{
+    width:45%;
+    margin-left:5%;
+    cursor:pointer;
+    background-color: #0bb446;
+    padding: 2%;
+}
+input[type=reset] {
+    width:45%;
+    margin-left:1%;
+    cursor:pointer;
+    background-color: #e12424;
+    padding: 2%;
+
+}
+input[type=text],input[type=password],input[type=date],input[type=email],input[type=tel]{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: "FontAwesome";
+}
+
+.inscription-box, .panier-box {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 0.1%;
+    border: 0.2px solid #ccc; 
+    border-radius: 3px; 
+    margin: 0 2%; 
+    transition: background-color 0.3s; 
+}
+
+.inscription-box:hover, .panier-box:hover {
+    background-color: #464545;
+}
+
+
+
+
+
+
+
+/*------------PANIER-----------*/
+
+.produits2{
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap:20px;
+}
+
+.produit1 {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius:5px;
+    padding: 10px;
+    text-align: center;
+}
+
+.produit1 button{
+    background-color: #ff0000;
+}
+
+.produit1 button:active{
+    background-color: #b41515;
+}
+
+.raye {
+    text-decoration: line-through;
+}
+
+
+
+
+
+
+/*----------NOMS----------*/
+
+.noms{
+    text-align: center;
+}
+
+
+
+
+/*---------INSPIRATIONS-----------*/
+
+.argent{
+    text-align: center;
+}
+
+
+
+
+
+/*---------LIVRAISONS------------*/
+
+table {
+    border-collapse: collapse;
+    text-align: center;
+    margin: auto;
+}
+
+td, th {
+    border: 1px solid black;
+    padding: 15px;
+}
+
