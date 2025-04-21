@@ -1,9 +1,10 @@
 # Bases de données (SQL)
 
 ## Semestre 1
-Dans cette partie vous allez voir mes **projets WEB** réalisés en cours, comme un site web au début de l'année scolaire où l'on devait créer un site marchand (sans javascript).\
-Au début du deuxième semestre nous avons dû, en cours de communication, créer un site web "esthétique" sur le thème de notre choix.
+Pour le premier semestre nous avons découvert la base de données avec le langage **SQL**, le but de nos cours étaient donc d'apprendre les *SELECT, CREATE, WHERE, EXISTS, IN* et ainsi de suite.\
+Nous avons eu à la fin du semestre une SAE pour valider nos compétences en base de données.
 
 ## Semestre 2
-Nous avons appris à coder en SQL pour la première fois, donc au semestre 1 c'était surtout l'introduction à la base de donnée (SELECT, CREATE, DROP, WHERE, EXISTS, IN, etc...)\
-Au deuxième semestre nous avons du exploiter une base de donnée (d'où le nom de la matière *Exploitation de base de données*) ce qui nous a permis de travailler à plusieurs sur des données et s'occuper de cette base de données.
+Lors du second semestre nous sommes allés plus loin dans la base de données car nous devions exploiter des bases, les manipuler, à plusieurs donc donner les droits aux autres avec des *GRANT*.\
+Lors de notre SAE nous avions à manipuler une grosse base de donnée en groupe de 4, et présenter ce que nous avons fais etc.
+>Cette base de donnée était sur les stations de recharges de voiture.
