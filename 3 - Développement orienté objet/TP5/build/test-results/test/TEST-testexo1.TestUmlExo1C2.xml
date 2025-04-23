@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="testexo1.TestUmlExo1C2" tests="7" skipped="0" failures="0" errors="0" timestamp="2025-03-03T14:45:45" hostname="u-inf-j-e117-06" time="0.276">
+  <properties/>
+  <testcase name="test6 - 'C2' has a method 'ope4'()" classname="testexo1.TestUmlExo1C2" time="0.264"/>
+  <testcase name="test5 - 'C2' has a method 'ope2'()" classname="testexo1.TestUmlExo1C2" time="0.001"/>
+  <testcase name="test1 - class C2 is open or not()" classname="testexo1.TestUmlExo1C2" time="0.002"/>
+  <testcase name="test0 - class C2 is abstract or not()" classname="testexo1.TestUmlExo1C2" time="0.001"/>
+  <testcase name="test2 - 'C2' extends other classe(s)()" classname="testexo1.TestUmlExo1C2" time="0.003"/>
+  <testcase name="test4 - 'C2' has method(s)()" classname="testexo1.TestUmlExo1C2" time="0.0"/>
+  <testcase name="test3 - 'C2' has attribute(s)()" classname="testexo1.TestUmlExo1C2" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

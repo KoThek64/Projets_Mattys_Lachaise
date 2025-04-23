@@ -1,0 +1,65 @@
+import iut.collections.ListeChainee
+import iut.collections.iFile
+import org.junit.jupiter.api.Assertions.assertEquals
+import org.junit.jupiter.api.Assertions.assertTrue
+import org.junit.jupiter.api.BeforeEach
+import org.junit.jupiter.api.Test
+import org.junit.jupiter.api.assertThrows
+
+class TestUsageCommeFileListeChainee {
+
+    lateinit var file : iFile
+
+    @BeforeEach
+    fun init() {
+        file = ListeChainee()
+    }
+
+    @Test
+    fun `liste = file vide - consulterTete`() {
+        assertThrows<NoSuchElementException> { file.consulterEnTete() }
+    }
+
+    @Test
+    fun `liste = file vide - supprimerTete`() {
+        assertThrows<NoSuchElementException> { file.supprimerEnTete() }
+    }
+
+    @Test
+    fun `liste = file vide - consulterQueue`() {
+        assertThrows<NoSuchElementException> { file.consulterEnQueue() }
+    }
+
+    @Test
+    fun `liste = file vide - supprimerQueue`() {
+        assertThrows<NoSuchElementException> { file.supprimerEnQueue() }
+    }
+
+    @Test
+    fun `liste = file vide - taille`() {
+        assert(file.taille() == 0)
+    }
+
+    @Test
+    fun `liste = file vide - estVide`() {
+        assertTrue(file.estVide())
+    }
+
+    @Test
+    fun `liste = file vide - insererEnTete`() {
+        file.insererEnTete(666)
+        assertTrue(file.taille() == 1)
+        assertEquals(666, file.consulterEnTete())
+        assertEquals(666, file.consulterEnQueue())
+    }
+
+    @Test
+    fun `liste = file vide - insererEnQueue`() {
+        file.insererEnTete(666)
+        assert(file.taille() == 1)
+        assertEquals(666, file.consulterEnTete())
+        assertEquals(666, file.consulterEnQueue())
+    }
+
+}
+

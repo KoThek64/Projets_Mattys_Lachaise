@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TestUsageVoiture" tests="12" skipped="0" failures="0" errors="0" timestamp="2025-02-11T16:16:24" hostname="ubuntu" time="0.03">
+  <properties/>
+  <testcase name="batmobile_roule()" classname="TestUsageVoiture" time="0.013"/>
+  <testcase name="batmobile_initNoire()" classname="TestUsageVoiture" time="0.007"/>
+  <testcase name="batmobile_peinteEnRoseEnRoulant()" classname="TestUsageVoiture" time="0.001"/>
+  <testcase name="batmobile_roule2()" classname="TestUsageVoiture" time="0.001"/>
+  <testcase name="batmobile_roule3()" classname="TestUsageVoiture" time="0.0"/>
+  <testcase name="batmobile_roule4()" classname="TestUsageVoiture" time="0.0"/>
+  <testcase name="batmobile_roule5()" classname="TestUsageVoiture" time="0.0"/>
+  <testcase name="batmobile_roule6()" classname="TestUsageVoiture" time="0.0"/>
+  <testcase name="batmobile_roule7()" classname="TestUsageVoiture" time="0.0"/>
+  <testcase name="batmobile_initRose()" classname="TestUsageVoiture" time="0.001"/>
+  <testcase name="batmobile_demarrer()" classname="TestUsageVoiture" time="0.001"/>
+  <testcase name="batmobile_peinteEnRose()" classname="TestUsageVoiture" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

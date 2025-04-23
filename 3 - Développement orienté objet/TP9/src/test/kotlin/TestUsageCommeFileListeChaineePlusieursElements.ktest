@@ -1,0 +1,65 @@
+import iut.collections.ListeChainee
+import iut.collections.iFile
+import org.junit.jupiter.api.Assertions.assertEquals
+import org.junit.jupiter.api.BeforeEach
+import org.junit.jupiter.api.Test
+
+class TestUsageCommeFileListeChaineePlusieursElements {
+
+    lateinit var file : iFile
+
+    @BeforeEach
+    fun init() {
+        file = ListeChainee()
+        file.empiler(42)
+        file.empiler(0)
+        file.empiler(-2)
+        file.empiler(4)
+        file.empiler(-42)
+        file.empiler(-4)
+        file.empiler(99)
+    }
+
+    @Test
+    fun `consulter debut file`() {
+        val res = file.consulterEnTete()
+        assertEquals(99, res)
+    }
+
+    @Test
+    fun `consulter fin file`() {
+        val res = file.consulterEnQueue()
+        assertEquals(42, res)
+    }
+
+    @Test
+    fun `supprimer debut file`() {
+        file.supprimerEnTete()
+        val res = file.consulterEnTete()
+        assertEquals(-4, res)
+    }
+
+    @Test
+    fun `supprimer fin file`() {
+        file.supprimerEnQueue()
+        val res = file.consulterEnQueue()
+        assertEquals(0, res)
+    }
+
+    @Test
+    fun `inserer debut file`() {
+        file.insererEnTete(666)
+        val res = file.consulterEnTete()
+        assertEquals(666, res)
+    }
+
+    @Test
+    fun `inserer fin file`() {
+        file.insererEnQueue(666)
+        val res = file.consulterEnQueue()
+        assertEquals(666, res)
+    }
+
+
+}
+
